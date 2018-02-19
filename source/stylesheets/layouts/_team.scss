@@ -10,20 +10,17 @@
 }
 
 .github-link {
-    color: rgba(0,0,0,0.25);
-    font-weight: bold;
-    letter-spacing: -0.5px;
-    font-size: 15px;
-}
-
-.github-link:focus {
+  color: rgba(0,0,0,0.25);
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  font-size: 15px;
+  &:focus {
   text-decoration: underline;
-}
-
-.github-link:hover {
+  }
+  &:hover {
   outline: 0;
+  }
 }
-
 .main-container{
   background-image: linear-gradient(0deg, #fff 50%, #F4F4F4 50%);
   padding: 100px;
