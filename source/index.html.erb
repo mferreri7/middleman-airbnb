@@ -1,15 +1,18 @@
 ---
 title: Le Wagon - Middleman
 ---
-
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
+<%= partial "partials/banner" %>
+<div class="container">
+  <div class="row">
+    <% data.cities.each do |city| %>
+      <div class="col-xs-12 col-sm-4">
+        <%= partial("partials/card", :locals => { :url => "https://kitt.lewagon.com/placeholder/cities/" + city.name }) %>
+      </div>
+    <% end %>
   </div>
 </div>
+
+
+
+
+

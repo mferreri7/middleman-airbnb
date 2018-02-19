@@ -1,0 +1,15 @@
+---
+title: Le Wagon - Middleman - Team
+---
+<div class="main-container">
+  <ul class="list-inline text-center">
+    <% data.users.each do |user| %>
+      <li>
+        <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{user.github_nickname}", class: "img-circle" %>
+        <h3 class="username"><%= user.name%></h3>
+        <i class="fa fa-github"></i>
+        <%= link_to  "#{user.github_nickname}", "https://www.github.com/#{user.github_nickname}", class: "github-link" %>
+      </li>
+    <% end %>
+  </ul>
+</div>
